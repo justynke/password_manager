@@ -1,6 +1,3 @@
-from cryptography.fernet import Fernet
-
-
 pwd = input("What is the master password?\n")
 
 def view():
@@ -13,7 +10,7 @@ def view():
                 print("Account name:", account)
                 print("Username:", user, "\nPassword:", password, "\n\n")
     except:
-        print("You haven't saved any password yet. Add an entry first.")
+        print("You haven't saved any password yet. Create an entry first.")
 
 def add():
     name = input("What's the account for? (for example address of the website or name of the program)\n")
